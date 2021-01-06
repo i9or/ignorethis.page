@@ -18,8 +18,9 @@
     "start": "parcel ./src/index.html",
     "clean": "rimraf ./dist",
     "build": "parcel build ./src/index.html",
+    "cname": "cp ./src/CNAME ./dist",
     "deploy": "gh-pages -d ./dist",
-    "build-n-deploy": "run-s clean build deploy"
+    "build-n-deploy": "run-s clean build cname deploy"
   },
   "repository": {
     "type": "git",
